@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%; }
+
+body {
+  position: relative;
+  color: black;
+  margin: 0 auto; }
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+
+.maycontainer {
+  background: url(../img/fon5.jpg);
+  background-repeat: no-repeat;
+  height: 570px;
+  width: 100%;
+  position: relative; }
+
+.nav-batton {
+  background-color: #4bbcdc;
+  border-radius: 40px 40px 40px 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 17px 40px 18px 39px;
+  top: 85%;
+  left: 40%;
+  position: absolute;
+  cursor: pointer;
+  flex-direction: column; }
+
+.nav-batton-link {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 15px;
+  letter-spacing: 0px;
+  color: white; }
+
+.nav-batton-link:hover,
+.nav-batton-link::after {
+  color: rgba(0, 0, 0, 0.8); }
+
+/*# sourceMappingURL=loyter.css.map */
