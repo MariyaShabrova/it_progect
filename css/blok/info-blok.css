@@ -1,0 +1,132 @@
+.content {
+  min-height: 30.625rem;
+  width: 1200px;
+  position: relative;
+  display: flex;
+  overflow: hidden; }
+
+.content-blok {
+  width: 100%;
+  height: 802px; }
+
+.blok-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 13px; }
+
+.blok-title-text {
+  padding: 0px 16px 0px 0px;
+  color: #2c2d2f;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 6.2px; }
+
+.blok-info {
+  display: flex;
+  flex-direction: row; }
+
+.blok-info-img {
+  margin-right: 20%; }
+
+.blok-info-text {
+  max-width: 530px;
+  /* padding-left: 138px; */
+  margin: 40px 0 0 0;
+  /* align-items: center; */
+  height: 195px; }
+
+.blok-info-text-title {
+  color: #4bbcdc;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 15px;
+  letter-spacing: 2.2px; }
+
+.blok-info-text-items {
+  padding: 0px 16px 0px 0px;
+  color: #040101;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  /* font-weight: 400; */
+  /* text-transform: uppercase; */
+  font-style: normal;
+  text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  background-color: white;
+  align-items: center; }
+
+.blok-info-battom-link {
+  background: #365b65;
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem; }
+
+.blok-info-battom-link:hover,
+.blok-info-battom-link::after {
+  border-radius: 1px; }
+
+.blok-info-two {
+  display: flex;
+  flex-direction: row; }
+
+.blok-info-img-two {
+  margin-left: 15%; }
+
+.blok-info-text-two {
+  max-width: 530px;
+  /* padding-left: 138px; */
+  /* align-items: center; */
+  height: 195px; }
+
+.blok-info-text-title-two {
+  color: #4bbcdc;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 15px;
+  letter-spacing: 2.2px; }
+
+.blok-info-text-items-two {
+  padding: 0px 16px 0px 0px;
+  color: #040101;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  /* font-weight: 400; */
+  /* text-transform: uppercase; */
+  font-style: normal;
+  text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  background-color: white;
+  align-items: center; }
+
+.blok-info-battom-link {
+  background: #365b65;
+  padding: 0.5625rem 0.9375rem;
+  border-radius: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem; }
+
+.blok-info-battom-two {
+  padding-left: 20px; }
+
+/*# sourceMappingURL=info-blok.css.map */
