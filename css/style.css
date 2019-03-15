@@ -2087,7 +2087,7 @@ xsigin/signup popup
 
 .content-blok {
   width: 100%;
-  height: 802px; }
+  height: 100%; }
 
 .blok-title {
   display: flex;
@@ -2208,5 +2208,72 @@ xsigin/signup popup
 
 .blok-info-battom-two {
   padding-left: 20px; }
+
+.blok {
+  background: #eaebef; }
+
+.blok_contacts {
+  background-color: #040101;
+  box-shadow: 0px 45px 0px 10px #040101;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 1px 0px 1px 0px;
+  z-index: 1; }
+
+.navigation_menu-blok {
+  margin-top: -11px;
+  margin-bottom: 0px;
+  padding: -3px 1px 6px 0px;
+  z-index: 3; }
+
+.navigation_menu-logo:hover,
+.navigation_menu-logo::after {
+  color: #4bbcdc; }
+
+.namber_container {
+  display: flex; }
+
+.blok_container {
+  padding: 50px 0; }
+
+.blok_container-about {
+  display: flex; }
+
+.blok_container-about-text-title {
+  padding: 0px 10px 0px 0px;
+  color: #4bbcce;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  font-style: normal;
+  text-decoration: none;
+  line-height: 38px;
+  letter-spacing: 2.2px; }
+
+.blok_container-about-img-list {
+  padding: 0px 10px 0px 0px;
+  color: #2c2d2f;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 39px;
+  letter-spacing: 6.2px;
+  text-align: left; }
+
+.blok_container-about-text-items {
+  padding: 0px 10px 0px 0px;
+  color: #2c2d2f;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  font-style: normal;
+  text-decoration: none;
+  line-height: 38px;
+  letter-spacing: 2.2px; }
 
 /*# sourceMappingURL=style.css.map */

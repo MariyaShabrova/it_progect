@@ -192,3 +192,28 @@ jQuery.fn.putCursorAtEnd = function() {
     	}
 	});
 };
+
+
+//nomber
+
+
+
+
+$(function() {
+
+	$({numberValue: 0}).animate({numberValue: 1000}, {
+	
+		duration: 500, // Скорость анимации, где 500 = 0,5 одной секунды, то есть 500 миллисекунд
+		easing: "linear",
+		
+		step: function(val) {
+		
+			$(".price").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+			
+		}
+	};
+	
+});
+
+
+
