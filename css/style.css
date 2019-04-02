@@ -429,6 +429,7 @@ body {
   color: white; }
 
 .navigation_menu {
+  background-color: #2b3238;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px 0px 10px 0px;
@@ -574,21 +575,6 @@ body {
   position: relative;
   display: flex;
   overflow: hidden; }
-
-.maycontainer {
-  background: url(../img/fon.jpg);
-  background-repeat: no-repeat;
-  height: 630px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  position: relative;
-  margin: 0 auto;
-  /* max-width: 58.75rem; */
-  /* width: 95%; */
-  flex-direction: column;
-  /* text-align: center; */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
 
 #text-animal {
   font-family: "Montserrat", Sans-serif;
@@ -1159,6 +1145,21 @@ xsigin/signup popup
   height: 430px;
   padding-top: 43px;
   /* padding-top: 71px; */ }
+
+.maycontainer {
+  background: url(../img/fon.jpg);
+  background-repeat: no-repeat;
+  height: 630px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  /* max-width: 58.75rem; */
+  /* width: 95%; */
+  flex-direction: column;
+  /* text-align: center; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
 
 .text_container-title {
   font-size: 30px;
@@ -2824,5 +2825,50 @@ body {
   text-decoration: none;
   line-height: 38px;
   letter-spacing: 2.2px; }
+
+.footer {
+  margin-top: 36px;
+  padding-top: 18px;
+  color: #ffffff;
+  background-color: #849d8f; }
+
+.footer .container {
+  display: flex; }
+
+.footer-social {
+  width: 147px;
+  margin: 0;
+  margin-right: 214px;
+  min-height: 38px; }
+
+.footer-info {
+  width: 326px;
+  min-height: 38px; }
+
+.footer-info,
+.footer-social {
+  list-style: none; }
+
+.footer-info a {
+  color: #ffffff;
+  text-decoration: underline; }
+
+.footer-info a:hover,
+.footer-info a:focus {
+  color: #ffbc9e; }
+
+.footer-info {
+  text-align: center; }
+
+.footer-copyright {
+  width: 189px;
+  min-height: 59px;
+  margin-left: auto;
+  color: #ffffff;
+  text-align: left; }
+
+.footer-copyright .footer-button:hover,
+.footer-copyright .footer-button:focus {
+  color: #ffbc9e; }
 
 /*# sourceMappingURL=style.css.map */

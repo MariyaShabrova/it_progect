@@ -5,22 +5,7 @@
     display: flex;
     overflow: hidden;
 }
-.maycontainer {
-    background: url(../img/fon.jpg);
-    background-repeat: no-repeat;
-    height: 630px;
-    width: 100%;
-    position: relative; 
-    display: flex;
-    position: relative;
-    margin: 0 auto;
-    /* max-width: 58.75rem; */
-    /* width: 95%; */
-    flex-direction: column;
-    /* text-align: center; */ 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-  
-}
+
 
 #text-animal {
     font-family: "Montserrat", Sans-serif;
