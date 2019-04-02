@@ -18,6 +18,8 @@
     /* width: 95%; */
     flex-direction: column;
     /* text-align: center; */ 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  
 }
 
 #text-animal {
