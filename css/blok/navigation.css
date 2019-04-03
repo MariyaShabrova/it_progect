@@ -79,10 +79,13 @@
   text-align: center; }
 
 .text {
-  color: #ffffff; }
+  color: #4bbcdc; }
 
 .nav_contacts-list_phone:hover {
-  color: #4bbcdc; }
+  color: #ffff; }
+
+.nav_contacts-list_email:hover {
+  color: #ffff; }
 
 .nav_contacts-list_icon-img {
   fill: #4bbcdc;

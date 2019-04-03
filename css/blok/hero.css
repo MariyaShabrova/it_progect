@@ -5,13 +5,16 @@
   width: 100%;
   width: 100%;
   max-width: 1017px;
-  margin: auto;
+  /* margin: 13px 0px 27px 50px; */
   height: 430px;
-  padding-top: 43px;
-  /* padding-top: 71px; */ }
+  /* padding-top: 43px; */
+  /* padding-top: 71px; */
+  text-align: center;
+  align-items: center;
+  margin: 0 auto; }
 
 .maycontainer {
-  background: url(../img/fon.jpg);
+  background: url(../img/fon6.jpg);
   background-repeat: no-repeat;
   height: 630px;
   width: 100%;
@@ -25,21 +28,48 @@
   /* text-align: center; */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
 
-.text_container-title {
+.hero-title {
   font-size: 30px;
+  /* margin: auto auto 73px; */
+  max-width: 985px;
+  text-align: center;
+  color: white;
+  /* padding: 0px 16px 0px 0px; */
+  color: white;
+  font-family: "Montserrat", Sans-serif;
+  /* font-size: 14px; */
+  /* font-weight: 400; */
+  /* text-transform: uppercase; */
+  font-style: normal;
+  text-decoration: none;
+  /* line-height: 15px; */
+  letter-spacing: 1.2px;
+  color: linear-gradient(to top, #fefcea, #f1da36);
+  font-family: 'Rubik One', sans-serif;
+  font-size: 72px;
+  /* text-transform: uppercase; */
+  background: linear-gradient(45deg, #eef0f3 33%, #546165 66%, #4bbcdc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto; }
+
+.text_container-title {
+  font-size: 16px;
   margin: auto auto 73px;
   max-width: 985px;
   text-align: center;
   color: white;
-  padding: 0px 16px 0px 0px;
+  /* padding: 0px 16px 0px 0px; */
   color: white;
   font-family: "Montserrat", Sans-serif;
   /* font-size: 14px; */
-  font-weight: 400;
+  /* font-weight: 400; */
   text-transform: uppercase;
   font-style: normal;
   text-decoration: none;
-  line-height: 15px;
+  line-height: 0px;
   letter-spacing: 1.2px; }
 
 .hero_list {
