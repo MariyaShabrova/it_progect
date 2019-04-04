@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Basic v5.1.4 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
 .navigation_menu-logo-link {
   font-size: 30px;
   /* margin: auto auto 73px; */
@@ -23,6 +29,5 @@
   -webkit-text-fill-color: transparent;
   color: #0B2349;
   /* display: table; */
-  /* margin: 20px auto; */ }
-
-/*# sourceMappingURL=news.css.map */
+  /* margin: 20px auto; */
+}

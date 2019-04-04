@@ -219,22 +219,22 @@ $(function() {
 
 
 
-const buttons = document.querySelectorAll(`button[data-modal-trigger]`);
+var buttons = document.querySelectorAll('button[data-modal-trigger]');
 
-for(let button of buttons) {
-	modalEvent(button);
+for(var i=0; i < buttons.length; i++) {
+	modalEvent(buttons[i]);
 }
 
 function modalEvent(button) {
-	button.addEventListener('click', () => {
-		const trigger = button.getAttribute('data-modal-trigger');
-		const modal = document.querySelector(`[data-modal=${trigger}]`);
-		const contentWrapper = modal.querySelector('.content-wrapper');
-		const close = modal.querySelector('.close');
+	button.addEventListener('click', function() {
+		var trigger = button.getAttribute('data-modal-trigger');
+		var modal = document.querySelector('[data-modal=' + trigger + ']');
+		var contentWrapper = modal.querySelector('.content-wrapper');
+		var close = modal.querySelector('.close');
 
-		close.addEventListener('click', () => modal.classList.remove('open'));
-		modal.addEventListener('click', () => modal.classList.remove('open'));
-		contentWrapper.addEventListener('click', (e) => e.stopPropagation());
+		close.addEventListener('click', function() { modal.classList.remove('open') });
+		modal.addEventListener('click', function() { modal.classList.remove('open') });
+		contentWrapper.addEventListener('click', function(e) { e.stopPropagation() });
 
 		modal.classList.toggle('open');
 	});

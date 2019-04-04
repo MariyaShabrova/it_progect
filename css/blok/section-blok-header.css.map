@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAM;EACF,UAAU,EAAC,OAAO;;AAEtB,cAAe;EACX,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,yBAAyB;EACrC,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,eAAe;EACxB,OAAO,EAAE,CAAC;;AAEd,qBAAsB;EAClB,UAAU,EAAE,KAAK;EACjB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,gBAAgB;EACzB,OAAO,EAAE,CAAC;;AAEd;4BAC6B;EACzB,KAAK,EAAE,OAAO",
-"sources": ["section-blok-header.scss"],
-"names": [],
-"file": "section-blok-header.css"
-}
