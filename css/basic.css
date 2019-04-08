@@ -2829,6 +2829,7 @@ button {
 }
 
 .quotes {
+  padding-left: 40px;
   width: 95vw;
   min-height: 400px;
   display: -webkit-box;
@@ -2840,6 +2841,20 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   z-index: 2;
+}
+
+.quotes::after {
+  content: '';
+  background: #60a9ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f5e6), to(#171717));
+  background: linear-gradient(to bottom, #f7f5e6 0%, #171717 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 78px;
+  width: 100%;
+  z-index: 1;
 }
 
 .quotes .box {

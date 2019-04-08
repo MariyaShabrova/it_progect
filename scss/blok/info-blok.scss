@@ -4,10 +4,12 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    
 }
 .content-blok {
     width: 100%;
     height: 100%;
+    
 }
 .blok-title {
     display: flex;
@@ -352,6 +354,7 @@
    //Проба
 
    .quotes {
+    padding-left: 40px;
     width: 95vw;
     min-height: 400px;
     display: flex;
@@ -359,6 +362,19 @@
     justify-content: space-between;
     z-index: 2;
   }
+  .quotes::after {
+    content: '';
+    background: #60a9ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#4bbcdc));
+    background: linear-gradient(to bottom, #f7f5e6 0%, #171717 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+    height: 250px;
+    left: 0;
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    z-index: 1;
+}
   
   .quotes .box {
     position: relative;

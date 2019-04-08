@@ -338,5 +338,10 @@ $('.slider').each(function() {
 
   //Slider
 
+	
+
+
+
+
  
 	
