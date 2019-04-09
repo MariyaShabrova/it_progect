@@ -416,7 +416,7 @@ button {
 }
 
 .quotes {
-  padding-left: 40px;
+  padding: 20px;
   width: 95vw;
   min-height: 400px;
   display: -webkit-box;
@@ -433,8 +433,8 @@ button {
 .quotes::after {
   content: '';
   background: #60a9ff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f7f5e6), to(#171717));
-  background: linear-gradient(to bottom, #f7f5e6 0%, #171717 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#f7f5e6));
+  background: linear-gradient(to bottom, #151515 0%, #f7f5e6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
   height: 250px;
   left: 0;
@@ -442,6 +442,8 @@ button {
   top: 78px;
   width: 100%;
   z-index: 1;
+  -webkit-clip-path: polygon(0% 55%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0% 55%, 100% 0, 100% 100%, 0 100%);
 }
 
 .quotes .box {
@@ -449,7 +451,7 @@ button {
   width: 25vw;
   height: 35vh;
   min-height: 320px;
-  background: #f2f2f2;
+  background: #fdfdfd;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
@@ -461,36 +463,46 @@ button {
   box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
 }
 
-.quotes .box::before {
-  content: '\201C';
-  position: absolute;
-  top: -20px;
-  left: 5px;
-  width: 100%;
-  height: 100%;
-  font-size: 120px;
-  opacity: 0.2;
-  background: transparent;
-  pointer-events: none;
-}
-
-.quotes .box::after {
-  content: '\201D';
-  position: absolute;
-  bottom: -10%;
-  right: 5%;
-  font-size: 120px;
-  opacity: 0.2;
-  background: transparent;
-  -webkit-filter: invert(1);
-  filter: invert(1);
-  pointer-events: none;
-}
-
+/* .quotes .box::before {
+    content: '\201C';
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    pointer-events: none;
+  }
+  
+  .quotes .box::after {
+    content: '\201D';
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    filter: invert(1);
+    pointer-events: none;
+  }*/
 .quotes .box p {
   margin: 0;
-  padding: 10px;
   font-size: 1.2rem;
+  position: absolute;
+  margin: 0;
+  padding: -3px;
+  font-size: 1.2rem;
+  position: absolute;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 15px;
+  letter-spacing: 1.2px;
 }
 
 .quotes .box h2 {
@@ -520,6 +532,10 @@ button {
   width: 100%;
   height: 200%;
   overflow: hidden;
+}
+
+.blok-card-img-items {
+  padding-top: 30px;
 }
 
 /* .quotes .box.box1:hover,
@@ -936,7 +952,7 @@ body {
     border-right: 1px solid #e1f1ff;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    padding: 25px 50px;
+    padding: 25px 30px;
   }
   .pricing-plan:last-child {
     border-right: none;
