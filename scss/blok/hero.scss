@@ -59,7 +59,6 @@
 }
 .text_container-title {
     font-size: 16px;
-    margin: auto auto 73px;
     max-width: 985px;
     text-align: center;
     color: white;
@@ -73,6 +72,19 @@
     text-decoration: none;
     line-height: 0px;
     letter-spacing: 1.2px;
+}
+.text_container-title-item {
+    color: #f8f5f8;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 15px;
+    letter-spacing: 5.2px;
+    margin: auto auto 73px;
+
 }
 .hero_list {
     display: flex;

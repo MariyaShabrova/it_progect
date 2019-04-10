@@ -338,10 +338,12 @@ $('.slider').each(function() {
 
   //Slider
 
-	
 
+	//Пример галлереи
 
-
-
- 
-	
+	$('.view-gallery button').on('click', function() {
+		$('.boxi').toggleClass('animated');
+		// $('ul').css({
+		//   'max-width' : '100%'
+		// });
+	});

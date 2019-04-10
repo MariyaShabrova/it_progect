@@ -238,25 +238,7 @@
     background-color: #ccc370;
   }
   
-  .button:before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    border: none;
-    color: #fff;
-    
-    margin: 0px;
-    width: 48px;
-    height: 48px;
-  
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
-    background-repeat: no-repeat;
-    background-size: 18px;
-    background-position: center;
-    background-color: #b59f5b;
-  }
-  
+
   .subscribe-form {
     display: flex;
     flex-direction: column;
