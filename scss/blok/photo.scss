@@ -89,7 +89,7 @@ img {
     border-radius: 5px;
 }
 
-.photo {
+.gallery {
     position: fixed;
     top: 0;
     left: 0;
@@ -101,7 +101,7 @@ img {
     box-sizing: border-box;
 }
 
-.photo > img {
+.gallery > img {
     max-height: 100%;
     width: auto;
 }

@@ -32,6 +32,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   color: white;
+  margin-top: 15px;
 }
 
 .navigation_menu {
@@ -114,7 +115,7 @@
 
 .text {
   color: #4bbcdc;
-  font-size: 20px;
+  font-size: 15px;
   /* font-size: 16px; */
   /* max-width: 985px; */
   /* text-align: center; */

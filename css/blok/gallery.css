@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
-.gallery {
+.gallerys {
   height: 830px;
 }
 
@@ -28,7 +28,7 @@
   box-sizing: border-box;
 }
 
-.gallery-list {
+.gallerys-list {
   list-style: none;
   padding: 0;
   -webkit-perspective: 3000px;
@@ -39,7 +39,7 @@
 }
 
 @media (min-width: 768px) {
-  .gallery-list {
+  .gallerys-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -101,11 +101,11 @@
   background-repeat: no-repeat;
 }
 
-.view-gallery {
+.view-gallerys {
   text-align: center;
 }
 
-.view-gallery button {
+.view-gallerys button {
   background: #274a54;
   color: white;
   padding: 1rem 2rem;
@@ -114,7 +114,7 @@
   transition: background 200ms ease;
 }
 
-.view-gallery button:hover {
+.view-gallerys button:hover {
   cursor: pointer;
   background: #4394ab;
 }

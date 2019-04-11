@@ -14,9 +14,9 @@ $(document).ready(function(){
         
         // remove hidden class if "all" is selected
         if(category == 'all-projects'){
-            $('ul#photo li:hidden').fadeIn('slow').removeClass('hidden');
+            $('ul#gallery li:hidden').fadeIn('slow').removeClass('hidden');
         } else {
-            $('ul#photo li').each(function(){
+            $('ul#gallery li').each(function(){
                if(!$(this).hasClass(category)){
                    $(this).hide().addClass('hidden');
                } else {
@@ -27,16 +27,16 @@ $(document).ready(function(){
         return false;        
     });
     // lightbox
-    $('ul#photo a').on('click', function(event){
+    $('ul#gallery a').on('click', function(event){
         event.preventDefault();
         var link = $(this).find('img').attr('src');
-        $('.photo img').attr('src', '');
-        $('.photo img').attr('src', link);
-        $('.photo').fadeIn('slow');
+        $('.gallery img').attr('src', '');
+        $('.gallery img').attr('src', link);
+        $('.gallery').fadeIn('slow');
     });
     // close lightbox
-    $('.photo').on('click', function(event){
+    $('.gallery').on('click', function(event){
         event.preventDefault();
-        $('.photo').fadeOut('slow');
+        $('.gallery').fadeOut('slow');
     });
 });

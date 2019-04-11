@@ -341,7 +341,7 @@ $('.slider').each(function() {
 
 	//Пример галлереи
 
-	$('.view-gallery button').on('click', function() {
+	$('.view-gallerys button').on('click', function() {
 		$('.boxi').toggleClass('animated');
 		// $('ul').css({
 		//   'max-width' : '100%'
