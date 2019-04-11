@@ -21,6 +21,7 @@
   margin-bottom: 0px;
   padding: 1px 0px 1px 0px;
   z-index: 1;
+  height: 46px;
 }
 
 .nav_contacts-conteiner {
@@ -34,6 +35,10 @@
 }
 
 .navigation_menu {
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
   background-color: #2b3238;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -109,6 +114,21 @@
 
 .text {
   color: #4bbcdc;
+  font-size: 20px;
+  /* font-size: 16px; */
+  /* max-width: 985px; */
+  /* text-align: center; */
+  /* color: white; */
+  /* padding: 0px 16px 0px 0px; */
+  /* color: white; */
+  font-family: "Montserrat", Sans-serif;
+  /* font-size: 14px; */
+  /* font-weight: 400; */
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 0px;
+  letter-spacing: 1.2px;
 }
 
 .nav_contacts-list_phone:hover {
