@@ -14,6 +14,13 @@
   overflow: hidden;
 }
 
+.content-info {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  height: 541px;
+}
+
 .content-blok {
   width: 100%;
   height: 580px;
@@ -257,7 +264,7 @@ button {
   -ms-flex-pack: start;
   justify-content: flex-start;
   width: 80%;
-  height: 40%;
+  height: 87%;
   margin: 0;
   padding: 2.5rem;
   background-color: white;
@@ -335,17 +342,20 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   margin: 0;
   padding: 0 0 1.25rem;
 }
 
 .modal .content-wrapper .modal-header h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #77787b;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .modal .content-wrapper .contents {
@@ -353,11 +363,19 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .modal .content-wrapper .contents p {
   font-size: 0.875rem;
-  line-height: 1.75;
+  /* line-height: 1.75; */
+  font-size: 17px;
+  font-weight: 300;
+  /* line-height: 1.2; */
+  margin-bottom: 11px;
 }
 
 .modal .content-wrapper .modal-footer {
@@ -413,6 +431,40 @@ button {
 
 .modal .content-wrapper .modal-footer .action:hover:before {
   width: 100%;
+}
+
+.contents ul {
+  margin-left: 30px;
+}
+
+.contents li::before {
+  background: #4bbcdc none repeat scroll 0 0;
+  border-radius: 50em;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 0;
+  margin-left: -20px;
+  margin-top: 7px;
+  width: 6px;
+  /* top: 0; */
+  position: absolute;
+}
+
+.contents li {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 9px;
+  position: relative;
+}
+
+.contents h3 {
+  color: #5094a7;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 17px;
+  margin-top: 17px;
+  text-align: left;
 }
 
 .quotes {
@@ -873,6 +925,8 @@ body {
 .slider {
   margin: 0 auto;
   max-width: 940px;
+  width: 100%;
+  position: relative;
 }
 
 .reviews-title {
@@ -1042,10 +1096,6 @@ a.slide_btn {
 .label {
   font-weight: 300;
   font-size: 20px;
-}
-
-.section {
-  padding: 60px 0;
 }
 
 .footer {

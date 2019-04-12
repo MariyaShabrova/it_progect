@@ -347,3 +347,21 @@ $('.slider').each(function() {
 		//   'max-width' : '100%'
 		// });
 	});
+
+
+	/*Гамбургер модалка*/
+var btn = document.querySelector('#hamburger');
+var hamburger = document.querySelector('.hamburger_container');
+var close = document.querySelector('.closeIcon_links');
+
+btn.addEventListener('click', function(e) {
+ hamburger.classList.add('opened');
+ btn.style.display = 'none';
+}
+)
+
+
+close.addEventListener('click', function(e) {
+hamburger.classList.remove('opened');
+btn.style.display = "block";
+})
