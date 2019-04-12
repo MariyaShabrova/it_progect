@@ -1,3 +1,9 @@
+.hero {
+    height: 630px;
+
+    @include phones() {
+        height: 435px;    }
+}
 .hero_container {
     position: relative;
     top: 0;
@@ -12,6 +18,10 @@
     text-align: center;
     align-items: center;
     margin: 0 auto;
+
+    @include phones() {
+        padding-top: 18px;
+    }
 }
 .maycontainer {
     background: url(../img/fon6.jpg);
@@ -29,6 +39,9 @@
     /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);*/
     clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0 100%);
   
+    @include phones() {
+        height: 470px;
+    }
 }
 .hero-title {
     font-size: 30px;
@@ -54,8 +67,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0B2349;
-    display: table;
+    display: block;
     margin: 20px auto;
+
+
+    @include phones() {
+        font-size: 32px;
+    }
 }
 .text_container-title {
     font-size: 21px;
@@ -72,6 +90,11 @@
     text-decoration: none;
     line-height: 0px;
     letter-spacing: 1.2px;
+
+
+    @include phones() {
+        font-size: 12px;
+    }
 }
 .text_container-title-item {
     color: #f8f5f8;
@@ -85,26 +108,52 @@
     letter-spacing: 5.2px;
     margin: auto auto 73px;
 
+
+    @include phones() {
+        font-size: 8px;
+        letter-spacing: 2.2px;
+        margin: auto auto 35px;
+    }
+
 }
 .hero_list {
     display: flex;
     justify-content: space-between;
+
+    @include phones() {
+        display: inline-block;
+    }
 }
 .hero_list-item {
     max-width: 180px;
     text-align: center;
     font-size: 18px;
     font-weight: 300;
+
+    @include phones() {
+        display: inline-block;
+    }
 }
 .hero_list-item-img {
     min-height: 144px;
     display: block;
+
+    @include phones() {
+        min-height: 85px;
+        display: flex;
+    }
 }
 .hero_list-img {
     margin-bottom: 30px;
     max-height: 100px;
     width: 100px;
     fill: #4bbcdc;
+
+    @include phones() {
+        max-height: 70px;
+        margin-bottom: 10px;
+
+    }
 }
 .hero_list-item-text {
     padding: 0px 16px 0px 0px;
@@ -117,4 +166,10 @@
     text-decoration: none;
     line-height: 15px;
     letter-spacing: 1.2px;
+
+    @include phones() {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 16px;
+    }
 }

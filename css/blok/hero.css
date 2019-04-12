@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
+.hero {
+  height: 630px;
+}
+
 .hero_container {
   position: relative;
   top: 0;
@@ -69,7 +73,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0B2349;
-  display: table;
+  display: block;
   margin: 20px auto;
 }
 

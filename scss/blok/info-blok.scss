@@ -6,6 +6,16 @@
     overflow: hidden;
     
 }
+.content-info {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: 541px;
+
+    @include phones() {
+      height: 670px;;
+  }
+}
 .content-blok {
     width: 100%;
     height: 580px;
@@ -16,6 +26,10 @@
     flex-direction: column;
     text-align: center;
     padding: 13px;
+
+    @include phones() {
+      padding: 3px;
+  }
 }
 .blok-title-text {
     padding: 0px 16px 0px 0px;
@@ -28,6 +42,12 @@
     text-decoration: none;
     line-height: 16px;
     letter-spacing: 6.2px;
+
+    @include phones() {
+     font-size: 20px;
+     line-height: 31px;
+     letter-spacing: 2.2px;
+  }
     
 }
 .blok-info {
@@ -190,6 +210,12 @@
        &:hover {
            box-shadow: 0 0.875rem 1.75rem rgba(0,0,0,0.25), 0 0.625rem 0.625rem rgba(0,0,0,0.22);
        }
+
+       @include phones() {
+        margin: 5px 41px;
+        padding: 5px 10px;
+        font-size: 0.775rem;
+    }
    }
    
    .modal {
@@ -215,6 +241,10 @@
            > .content-wrapper {
                transform: scale(1.0);
            }
+
+           @include phones() {
+            width: 80%;
+        }
        }
        
        .content-wrapper {
@@ -224,7 +254,7 @@
            align-items: center;
            justify-content: flex-start;
            width: 80%;
-           height: 40%;
+           height: 87%;
            margin: 0;
            padding: 2.5rem;
            background-color: white;
@@ -233,6 +263,11 @@
            transform: scale(0.0);
            transition: transform $base-duration;
            transition-delay: 0.15s;
+
+           @include phones() {
+            height: 100%;
+            padding: 0.5rem;
+        }
            
            .close {
                position: absolute;
@@ -247,6 +282,11 @@
                background-color: transparent;
                font-size: 1.5rem;
                transition: $base-duration linear;
+
+               @include phones() {
+                width: 1.5rem;
+                height: 1.56rem;;
+            }
                
                &:before, &:after {
                    position: absolute;
@@ -278,24 +318,42 @@
                display: flex;
                flex-direction: row;
                align-items: center;
-               justify-content: space-between;
+               justify-content: center;
                width: 100%;
                margin: 0;
                padding: 0 0 1.25rem;
                
                h2 {
-                   font-size: 1.5rem;
-                   font-weight: bold;
+                color: #77787b;
+                font-size: 36px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 10px;
+
+                @include phones() {
+                  font-size: 22px;
+                  margin-bottom: 5px;
+              }
                }
            }
            
            .contents {
                position: relative;
                display: flex;
+               flex-direction: column;
                
                p {
-                   font-size: 0.875rem;
-                   line-height: 1.75;
+                font-size: 0.875rem;
+                /* line-height: 1.75; */
+                font-size: 17px;
+                font-weight: 300;
+                /* line-height: 1.2; */
+                margin-bottom: 11px;;
+
+                @include phones() {
+                  font-size: 12px;
+                  margin-bottom: 8px;
+              }
                }
            }
            
@@ -351,7 +409,51 @@
        }
    }
 
+.contents ul {
+  margin-left: 30px;
 
+  @include phones() {
+    margin-left: 25px;
+}
+}
+
+.contents li::before {
+  background: #4bbcdc none repeat scroll 0 0;
+  border-radius: 50em;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 0;
+  margin-left: -20px;
+  margin-top: 7px;
+  width: 6px;
+  /* top: 0; */
+  position: absolute;
+
+  @include phones() {
+    margin-top: 2px;
+}
+}
+.contents li {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 9px;
+  position: relative;
+
+  @include phones() {
+    font-size: 9px;
+    margin-bottom: 5px;
+}
+}
+
+.contents h3 {
+  color: #5094a7;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 17px;
+  margin-top: 17px;
+  text-align: left;
+}
    //Проба
 
    .quotes {
@@ -363,6 +465,17 @@
     justify-content: space-between;
     z-index: 2;
     margin-left: 24px;
+
+    @include phones() {
+      padding: 3px 0 0 27px;
+      display: inline-block;
+  }
+  }
+
+  .card {
+    @include phones() {
+      padding-bottom: 9px;
+  }
   }
   .quotes::after {
     content: '';
@@ -377,6 +490,10 @@
     width: 100%;
     z-index: 1;
     clip-path: polygon(0% 55%, 100% 0, 100% 100%, 0 100%);
+
+    @include phones() {
+      display: none;
+  }
 }
   
   .quotes .box {
@@ -391,6 +508,13 @@
     box-sizing: border-box;
     padding: 30px;
     box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
+
+    @include phones() {
+      width: 75vw;
+      min-height: 175px;
+      padding: 10px 34px;
+      height: 30vh;
+  }
   }
   
  /* .quotes .box::before {
@@ -435,6 +559,10 @@
     text-decoration: none;
     line-height: 15px;
     letter-spacing: 1.2px;
+
+    @include phones() {
+      font-size: 11px;
+  }
   }
   
   .quotes .box h2 {
@@ -465,6 +593,12 @@
   }
   .blok-card-img-items {
     padding-top: 30px;
+
+    @include phones() {
+     padding-top: 13px;
+     width: 200px;
+     height: 140px;
+  }
     
   }
  /* .quotes .box.box1:hover,
@@ -769,6 +903,8 @@
 .slider {
   margin: 0 auto;
   max-width: 940px;
+  width: 100%;
+  position: relative;
 }
 .reviews-title {
   padding: 0px 16px 0px 0px;
@@ -942,9 +1078,7 @@ a.slide_btn {
 	font-weight: 300;
 	font-size: 20px;
 }
-.section {
-	padding: 60px 0;
-}
+
 .footer {
 	background: #e26d4e;
 	height: 60px;

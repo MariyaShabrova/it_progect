@@ -19,6 +19,7 @@
     justify-content: center;
     color: white;
     margin-top: 15px;
+
 }
 
 .navigation_menu {
@@ -28,6 +29,10 @@
     margin-bottom: 0px;
     padding: 0px 0px 10px 0px;
     z-index: 3;
+
+    @include tablets() {
+        display: none;
+    }
 }
 .navigation_title-link {
     padding: 0px 16px 0px 0px;
@@ -103,6 +108,11 @@
     text-decoration: none;
     line-height: 0px;
     letter-spacing: 1.2px;
+
+    @include phones() {
+       font-size: 10px;
+       margin-right: 15px;
+    }
 }
 .nav_contacts-list_phone:hover {
      color: #ffff;
@@ -114,6 +124,11 @@
  fill: #4bbcdc;
  width: 20px;
  height: 20px;
+
+ @include phones() {
+    width: 10px;
+    height: 10px;
+}
 }
 .nav-batton {
     background-color: #4bbcdc;
@@ -151,9 +166,19 @@
     width: 20px;
     height: 20px;
     fill: #4bbcdc;
+
+    @include phones() {
+        width: 10px;
+        height: 10px;
+    }
+
 }
 .nav_contacts-social-icon-instagram-title {
     color: #4bbcdc;
+
+    @include phones() {
+        display: none;
+    }
 }
 .nav_contacts-social-icon-instagram-title:hover,
 .nav_contacts-social-icon-instagram-title:after {
@@ -163,6 +188,11 @@
     width: 20px;
     height: 20px;
     fill: #4bbcdc;
+
+    @include phones() {
+        width: 10px;
+        height: 10px;
+    }
 }
 .nav_contacts-social-icon-twitter-title:hover,
 .nav_contacts-social-icon-twitter-title:after {
@@ -170,14 +200,28 @@
 }
 .nav_contacts-social-icon-twitter-title {
     color: #4bbcdc;
+
+    @include phones() {
+        display: none;
+    }
 }
 .nav_contacts-social-icon-fb-img {
     width: 20px;
     height: 20px;
     fill: #4bbcdc;
+
+    @include phones() {
+        width: 10px;
+        height: 10px;
+
+    }
 }
 .nav_contacts-social-icon-fb-title {
     color: #4bbcdc;
+
+    @include phones() {
+        display: none;
+    }
 }
 .nav_contacts-social-icon-fb-title:hover,
 .nav_contacts-social-icon-fb-title:after {
