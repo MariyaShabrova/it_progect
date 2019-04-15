@@ -17,6 +17,10 @@
     width: 100%;
     background: #0000;
     height: 610px;
+
+    @include phones() {
+      height: 25.9375rem;
+  }
   }
   
   .benefits__inner {
@@ -27,6 +31,10 @@
     max-width: 1140px;
     margin: 0 auto;
     padding: 50px 0px 0px 7px;
+
+    @include phones() {
+      padding: 63px 21px 0 21px;
+  }
   }
   
   .benefits__header {
@@ -48,6 +56,14 @@
     line-height: 18px;
     letter-spacing: 6.2px;
     padding-bottom: 56px;
+
+    @include phones() {
+      font-size: 20px;
+      padding: 0;
+      line-height: 20px;
+      letter-spacing: 4.2px;
+      padding-bottom: 40px;
+  }
   }
   
   .benefits__element {
@@ -62,6 +78,14 @@
     font-size: 30px;
     background-color: #2a2a2a;
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 0%, rgba(191, 191, 191, 0.4) 54%, rgba(0, 0, 0, 0.3));
+    
+    @include phones() {
+      width: 90px;
+      height: 90px;
+      font-size: 5px;
+      
+  }
+ 
   }
   
   .benefits__icon {
@@ -83,6 +107,12 @@
     font-weight: 700;
     margin-bottom: 20px;
     opacity: 0;
+
+    @include phones() {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+    }
   }
   
   .benefits__title {
@@ -97,21 +127,47 @@
     text-decoration: none;
     line-height: 15px;
     letter-spacing: 1.2px;
+
+    @include phones() {
+      font-size: 8px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+
+    }
   }
   .benefits_screen {
     width: 198px;
     padding-left: -1px;
     height: 162px;
     padding-top: 30px;
+
+    @include phones() {
+      width: 78px;
+      height: 92px;
+      padding-left: 11px;
+      margin-top: -17px;
+
+    }
   }
   
   .benefits_people {
     width: 203px;
     height: 163px;
+
+    @include phones() {
+      width: 88px;
+      height: 75px;
+      
+  }
   }
   .benefits_img {
     width: 201px;
     height: 164px;
     padding-top: 36px;
+    @include phones() {
+    width: 88px;
+    height: 73px;
+    padding-top: 11px;
+    }
   
   }

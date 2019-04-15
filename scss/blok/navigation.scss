@@ -30,9 +30,15 @@
     padding: 0px 0px 10px 0px;
     z-index: 3;
 
-    @include tablets() {
+    @include phones() {
         display: none;
     }
+
+}
+.form {
+    @include phones() {
+       display: block;
+    }    
 }
 .navigation_title-link {
     padding: 0px 16px 0px 0px;

@@ -732,10 +732,7 @@
   
   /* Fonts */
   
-  body {
-    font-family: Roboto;
-  }
-  
+
   #timeline {
     padding: 100px 0;
     background: $background;
@@ -865,11 +862,11 @@
       }
       .body {
         background: #fff;
-        border: $border;
+        /*border: $border;
         border-top: 0;
         padding: $inner-margin;
         @include mq-lg {
-          height: $body-height;
+          height: $body-height;*/
         }
         p {
           font-size: 14px;
@@ -891,7 +888,7 @@
         }
       }
     }
-  }
+  
 
 
  
@@ -900,11 +897,16 @@
 
 
 
-.slider {
+.sliders {
   margin: 0 auto;
   max-width: 940px;
   width: 100%;
   position: relative;
+
+  @include phones() {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 .reviews-title {
   padding: 0px 16px 0px 0px;
@@ -1087,6 +1089,3 @@ a.slide_btn {
 	line-height: 60px;
 	color: #fff;
 }
-
-
-

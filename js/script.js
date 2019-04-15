@@ -245,7 +245,7 @@ function modalEvent(button) {
 
 //Пример
 
-$('.slider').each(function() {
+$('.sliders').each(function() {
 	var $this = $(this);
 	var $group = $this.find('.slide_group');
 	var $slides = $this.find('.slide');
@@ -349,19 +349,7 @@ $('.slider').each(function() {
 	});
 
 
-	/*Гамбургер модалка*/
-var btn = document.querySelector('#hamburger');
-var hamburger = document.querySelector('.hamburger_container');
-var close = document.querySelector('.closeIcon_links');
-
-btn.addEventListener('click', function(e) {
- hamburger.classList.add('opened');
- btn.style.display = 'none';
-}
-)
 
 
-close.addEventListener('click', function(e) {
-hamburger.classList.remove('opened');
-btn.style.display = "block";
-})
+
+
