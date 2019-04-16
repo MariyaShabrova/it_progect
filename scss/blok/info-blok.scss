@@ -461,15 +461,15 @@
     padding: 20px;
     width: 95vw;
     min-height: 400px;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 2;
-    margin-left: 24px;
+    margin: 0 auto;
 
     @include phones() {
-      padding: 3px 0 0 27px;
-      display: inline-block;
+      margin: o auto;
+      display: block;
   }
   }
 
@@ -507,13 +507,13 @@
     transition: all 0.5s ease-in;
     z-index: 2;
     box-sizing: border-box;
-    padding: 30px;
+    margin: o auto;
     box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
 
     @include phones() {
       width: 75vw;
       min-height: 175px;
-      padding: 10px 34px;
+      margin: 0 auto;
       height: 30vh;
   }
   }
