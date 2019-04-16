@@ -14,6 +14,7 @@
 
     @include phones() {
       height: 670px;;
+      margin: -15px auto;;
   }
 }
 .content-blok {
@@ -243,7 +244,7 @@
            }
 
            @include phones() {
-            width: 80%;
+            width: 100%;
         }
        }
        

@@ -470,6 +470,7 @@ body {
   width: 100%;
   position: relative;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .nav-container {
@@ -518,12 +519,6 @@ body {
 @media screen and (max-width: 480px) {
   .navigation_menu {
     display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .form {
-    display: block;
   }
 }
 
@@ -1405,7 +1400,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .hero {
-    height: 435px;
+    height: 390px;
   }
 }
 
@@ -1458,7 +1453,9 @@ body {
 
 @media screen and (max-width: 480px) {
   .maycontainer {
-    height: 470px;
+    height: 390px;
+    background: url(../img/fon7.jpg);
+    background-size: 225%;
   }
 }
 
@@ -1493,6 +1490,7 @@ body {
 @media screen and (max-width: 480px) {
   .hero-title {
     font-size: 32px;
+    margin: 0px auto;
   }
 }
 
@@ -1629,6 +1627,12 @@ body {
   background: none;
 }
 
+@media screen and (max-width: 480px) {
+  .body {
+    display: none;
+  }
+}
+
 .sky-mega-menu {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -1644,6 +1648,12 @@ body {
     font-size: 0;
     line-height: 0;*/
   text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  .sky-mega-menu {
+    text-align: center;
+  }
 }
 
 .sky-mega-menu:after {
@@ -1664,6 +1674,14 @@ body {
   line-height: 45px;
   text-align: left;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+  .sky-mega-menu li {
+    padding: 2px;
+    line-height: 10px;
+    text-align: center;
+  }
 }
 
 .sky-mega-menu li a {
@@ -1767,6 +1785,12 @@ body {
   text-decoration: none;
   line-height: 40px;
   letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 480px) {
+  .fa-text {
+    line-height: 26px;
+  }
 }
 
 /**/
@@ -2212,6 +2236,12 @@ body {
   font-size: 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .connection {
+    font-size: 11px;
+  }
+}
+
 /**/
 /* forms */
 /**/
@@ -2546,6 +2576,15 @@ body {
   .sky-mega-menu-response-to-icons li a {
     padding: 0 10px;
   }
+}
+
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  .sky-mega-menu-response-to-icons li a {
+    padding: 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .sky-mega-menu-response-to-icons li > div,
   .sky-mega-menu-response-to-icons li > [class^="grid-container"] {
     width: 100%;
@@ -2631,6 +2670,7 @@ body {
 @media screen and (max-width: 480px) {
   .content-info {
     height: 670px;
+    margin: -15px auto;
   }
 }
 
@@ -2885,7 +2925,7 @@ button {
 
 @media screen and (max-width: 480px) {
   .modal.open {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -5207,5 +5247,142 @@ img {
 @media (max-width: 568px) {
   #projects > ul > li {
     width: 100%;
+  }
+}
+
+.menu-hamburger-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.hamb-icon {
+  display: none;
+  border-top: 4px #fff solid;
+  border-bottom: 4px #fff solid;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  margin: 10px 20px;
+  border-radius: 1px;
+}
+
+.hamb-icon:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  border-top: 4px #fff solid;
+  margin-top: -2px;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .hamb-icon {
+    display: block;
+  }
+}
+
+.hamb-menu {
+  display: none;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background: rgba(47, 50, 52, 0.99);
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .hamb-menu {
+    display: block;
+  }
+}
+
+.hamb-menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .logo_container {
+    margin: 10px 0px 0px 20px;
+  }
+}
+
+.closeIcon {
+  margin: 30px 20px 0px 0px;
+}
+
+.hamb-menu__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.hamb-menu__item:last-child .hamb-menu__link:after {
+  display: none;
+}
+
+.hamb-menu__link {
+  display: inline-block;
+  margin: 30px;
+  font-family: 'ubunturegular';
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+@media screen and (max-width: 375px) {
+  .hamb-menu__link {
+    margin: 20px;
+  }
+}
+
+.hamb-menu__link:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 200%;
+}
+
+@media screen and (max-width: 375px) {
+  .hamb-menu__link:after {
+    top: 150%;
+  }
+}
+
+.hamb {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hamb {
+    display: block;
+    background: #242424;
   }
 }

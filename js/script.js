@@ -352,4 +352,19 @@ $('.sliders').each(function() {
 
 
 
-
+ //меню в моб версии
+ $('.menu-hamburger-link').on('click', function(){
+	$('.hamb-menu').css('display','block');
+	$('.hamb-menu').addClass('hamb-menu-active');            
+	// $("section:not(.first_screen)").css('display','none');
+	// $("body").css('overflow','hidden');
+	$('body').addClass('disabled-onepage-scroll');
+			
+	$('.onepage-pagination').css('right','-99999px');
+});
+$('#closeIcon').on('click', function(){
+	$('.hamb-menu').css('display','none');
+	$('.hamb-menu').removeClass('hamb-menu-active');
+	$('.onepage-pagination').css('right','25px');
+});
+ 
