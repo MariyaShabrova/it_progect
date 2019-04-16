@@ -2,7 +2,7 @@
     height: 630px;
 
     @include phones() {
-        height: 435px;    }
+        height: 390px;    }
 }
 .hero_container {
     position: relative;
@@ -40,7 +40,9 @@
     clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0 100%);
   
     @include phones() {
-        height: 470px;
+        height: 390px;
+        background: url(../img/fon7.jpg);
+        background-size: 225%;
     }
 }
 .hero-title {
@@ -73,6 +75,7 @@
 
     @include phones() {
         font-size: 32px;
+        margin: 0px auto;
     }
 }
 .text_container-title {

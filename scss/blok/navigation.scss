@@ -35,11 +35,7 @@
     }
 
 }
-.form {
-    @include phones() {
-       display: block;
-    }    
-}
+
 .navigation_title-link {
     padding: 0px 16px 0px 0px;
     color: white;
