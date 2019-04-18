@@ -1,16 +1,18 @@
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
+.navigation_menu-logo {
 
-
-
-
-
-
-  
-
-
+    @include phones() {
+        display: block;
+     }
+}
+.logo {
+    width: 154px;
+    height: 132px;
+    margin-top: -34px;
+}
 
 .nav_contacts {
     background-color: #2b3238;
@@ -26,7 +28,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    margin-top: 15px;
+    
 
 }
 
@@ -35,8 +37,8 @@
     background-color: #2b3238;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 0px 0px 10px 0px;
     z-index: 3;
+
 
     @include phones() {
         display: none;
@@ -63,6 +65,7 @@
 .navigation_menu-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: -40px;
 }
 .text_container-basic {
     font-family: "Montserrat", Sans-serif;
@@ -102,7 +105,7 @@
 }
 .text {
     color: #4bbcdc;
-    font-size: 15px;
+    font-size: 11px;
     
     /* font-size: 16px; */
     /* max-width: 985px; */
@@ -132,13 +135,17 @@
 }
 .nav_contacts-list_icon-img {
  fill: #4bbcdc;
- width: 20px;
- height: 20px;
+ width: 15px;
+ height: 15px;
 
  @include phones() {
     width: 10px;
     height: 10px;
 }
+}
+
+.nav_contacts-list {
+    margin-right: 15px;
 }
 .nav-batton {
     background-color: #4bbcdc;

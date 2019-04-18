@@ -476,9 +476,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+  .navigation_menu-logo {
+    display: block;
+  }
+}
+
+.logo {
+  width: 154px;
+  height: 132px;
+  margin-top: -34px;
 }
 
 .nav_contacts {
@@ -500,7 +512,6 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   color: white;
-  margin-top: 15px;
 }
 
 .navigation_menu {
@@ -511,7 +522,6 @@ body {
   background-color: #2b3238;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 0px 0px 10px 0px;
   z-index: 3;
 }
 
@@ -546,6 +556,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: -40px;
 }
 
 .text_container-basic {
@@ -589,7 +600,7 @@ body {
 
 .text {
   color: #4bbcdc;
-  font-size: 15px;
+  font-size: 11px;
   /* font-size: 16px; */
   /* max-width: 985px; */
   /* text-align: center; */
@@ -623,8 +634,8 @@ body {
 
 .nav_contacts-list_icon-img {
   fill: #4bbcdc;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 @media screen and (max-width: 480px) {
@@ -632,6 +643,10 @@ body {
     width: 10px;
     height: 10px;
   }
+}
+
+.nav_contacts-list {
+  margin-right: 15px;
 }
 
 .nav-batton {
@@ -2668,7 +2683,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .content-info {
-    height: 670px;
+    height: 750px;
     margin: -15px auto;
   }
 }
@@ -3198,7 +3213,9 @@ button {
   padding: 20px;
   width: 95vw;
   min-height: 400px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -3258,6 +3275,7 @@ button {
   margin: o auto;
   -webkit-box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
   box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -3309,6 +3327,9 @@ button {
   text-decoration: none;
   line-height: 15px;
   letter-spacing: 1.2px;
+  text-align: center;
+  margin-top: 16px;
+  margin-left: 27px;
 }
 
 @media screen and (max-width: 480px) {
@@ -3347,14 +3368,13 @@ button {
 }
 
 .blok-card-img-items {
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 480px) {
   .blok-card-img-items {
-    padding-top: 13px;
-    width: 200px;
-    height: 140px;
+    width: 182px;
+    height: 127px;
   }
 }
 
@@ -4518,7 +4538,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
   .benefits__inner {
-    padding: 63px 21px 0 21px;
+    padding: 27px 10px 0px 10px;
   }
 }
 
