@@ -147,7 +147,6 @@ jQuery(document).ready(function($){
 		formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 
-
 	//IE9 placeholder fallback
 	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
 	if(!Modernizr.input.placeholder){
@@ -173,6 +172,7 @@ jQuery(document).ready(function($){
 	}
 
 });
+
 
 
 //credits http://css-tricks.com/snippets/jquery/move-cursor-to-end-of-textarea-or-input/
