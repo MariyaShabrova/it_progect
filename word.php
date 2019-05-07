@@ -6,6 +6,11 @@ function getGlobals() {
     'услуги' => 'service',
     'наша команда' => 'our team',
     'портфолио' => 'portfolio',
+    'свяжитесь с нами' => 'contact us',
+    'Новости' => 'Nevs',
+    'Клиенты' => 'Customers',
+    'Партнеры' => 'Partners',
+    'современная российская компания' => 'modern russian company'
   ];
 
   return [

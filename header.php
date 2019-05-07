@@ -38,12 +38,12 @@ include "word.php";
                             </div>
                         </li> 
                     <li class="nav-item" aria-haspopup="true">
-                            <a class="fa-text" href="#">О нас</a>
+                            <a class="fa-text" href="#"><?= t('о нас'); ?></a>
                             <div class="grid-container3">
                                 <ul>
-                                    <li><a href="./news.html">Новости</a></li>
-                                    <li><a href="#">Клиенты</a></a></li>
-                                    <li><a href="#">Партнеры</a></a></li>
+                                    <li><a href="./news.html"><?= t('Новости'); ?></a></li>
+                                    <li><a href="#"><?= t('Клиенты'); ?></a></a></li>
+                                    <li><a href="#"><?= t('Партнеры'); ?></a></a></li>
                                 </ul>
                             </div>
                         </li>
@@ -129,13 +129,13 @@ include "word.php";
                                 </div>
                             </li>
                         <li class="nav-item">
-                            <a class="fa-text" href=".//portfolio.html">Наша команда</a>
+                            <a class="fa-text" href=".//portfolio.html"><?= t('наша команда'); ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="fa-text" href=".//portfolio.html">Портфолио</a>
+                            <a class="fa-text" href=".//portfolio.html"><?= t('портфолио'); ?></a>
                         </li>
                         <li class="nav-item right">
-                            <a class="fa-text connection" aria-haspopup="true form" href="#">Свяжитесь с нами</a>
+                            <a class="fa-text connection" aria-haspopup="true form" href="#"><?= t('свяжитесь с нами'); ?></a>
                             <div class="grid-container6">
                                 <!--Форма отправки сообщени в шапке сайта-->
                                 <form action="nav_form">
