@@ -1,18 +1,45 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'mailer/Exception.php';
+require 'mailer/PHPMailer.php';
+require 'mailer/SMTP.php';
+
+
+
 // Check for empty fields
-if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['body']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   http_response_code(500);
   exit();
 }
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email = strip_tags(htmlspecialchars($_POST['email']));
 $subject = strip_tags(htmlspecialchars($_POST['subject']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
-// Create the email and send the message
-$to = "yourname@yourdomain.com"; // Add your email address inbetween the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
-$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email\n\nMessage:\n$message";
-$header = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$header .= "Reply-To: $email";	
-if(!mail($to, $subject, $body, $header))
-  http_response_code(500);
-?>
+$message = strip_tags(htmlspecialchars($_POST['body']));
+
+$mail = new PHPMailer(true);
+
+$userName = 'Василий';
+$userMail = 'nebk@bk.ru';
+$password = '***';
+
+try {
+  $mail->isSMTP();                                            // Set mailer to use SMTP
+  $mail->SMTPDebug = 2;
+  $mail->Host       = 'ssl://smtp.mail.ru';  // Specify main and backup SMTP servers
+  $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+  $mail->Username   = $userMail;                     // SMTP username
+  $mail->Password   = $password ;                               // SMTP password
+  $mail->SMTPSecure = 'SSL'; //'tls';                                  // Enable TLS encryption, `ssl` also accepted
+  $mail->Port       = '465';//587;                                    // TCP port to connect to
+  $mail->CharSet = 'UTF-8';
+
+  $mail->setFrom($userMail, $userName);
+  $mail->addAddress($userMail, $userName);     // Add a recipient
+  $mail->Subject = $subject;
+  $mail->Body    = "Обратная связь.\n\n"."Детали:\n\Имя: $name\n\nEmail: $email\n\nСообщение:\n$message";
+ $mail->send();
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
