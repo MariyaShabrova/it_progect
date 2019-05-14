@@ -149,27 +149,27 @@ jQuery(document).ready(function($){
 
 	//IE9 placeholder fallback
 	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
-	if(!Modernizr.input.placeholder){
-		$('[placeholder]').focus(function() {
-			var input = $(this);
-			if (input.val() == input.attr('placeholder')) {
-				input.val('');
-		  	}
-		}).blur(function() {
-		 	var input = $(this);
-		  	if (input.val() == '' || input.val() == input.attr('placeholder')) {
-				input.val(input.attr('placeholder'));
-		  	}
-		}).blur();
-		$('[placeholder]').parents('form').submit(function() {
-		  	$(this).find('[placeholder]').each(function() {
-				var input = $(this);
-				if (input.val() == input.attr('placeholder')) {
-			 		input.val('');
-				}
-		  	})
-		});
-	}
+	// if(!Modernizr.input.placeholder){
+	// 	$('[placeholder]').focus(function() {
+	// 		var input = $(this);
+	// 		if (input.val() == input.attr('placeholder')) {
+	// 			input.val('');
+	// 	  	}
+	// 	}).blur(function() {
+	// 	 	var input = $(this);
+	// 	  	if (input.val() == '' || input.val() == input.attr('placeholder')) {
+	// 			input.val(input.attr('placeholder'));
+	// 	  	}
+	// 	}).blur();
+	// 	$('[placeholder]').parents('form').submit(function() {
+	// 	  	$(this).find('[placeholder]').each(function() {
+	// 			var input = $(this);
+	// 			if (input.val() == input.attr('placeholder')) {
+	// 		 		input.val('');
+	// 			}
+	// 	  	})
+	// 	});
+	// }
 
 });
 
@@ -399,4 +399,24 @@ $(document).ready(function(){
 
 	});
 
+});
+
+//Отправка формы на почту
+
+$(document).ready(function(e) {
+
+	$("#contact-form").submit(function() {
+			$.post("mail.php", $("#contact-form").serialize())
+			// Serialization looks good: name=textInNameInput&&telefon=textInPhoneInput etc
+			.done(function(data) {
+				console.log(data)
+					if (data.trim().length > 0) {
+							$("#sent").text("Error");   
+					} else {
+							$("#sent").text("Success");
+					}
+			});
+
+			return false;
+	})
 });
