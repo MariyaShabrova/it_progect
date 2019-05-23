@@ -20,9 +20,9 @@ $message = strip_tags(htmlspecialchars($_POST['body']));
 
 $mail = new PHPMailer(true);
 
-$userName = 'Василий';
-$userMail = 'nebk@bk.ru';
-$password = '***';
+$userName = 'Mariya';
+$userMail = '5107724@mail.ru';
+$password = '*******';
 
 try {
   $mail->isSMTP();                                            // Set mailer to use SMTP
@@ -38,7 +38,7 @@ try {
   $mail->setFrom($userMail, $userName);
   $mail->addAddress($userMail, $userName);     // Add a recipient
   $mail->Subject = $subject;
-  $mail->Body    = "Обратная связь.\n\n"."Детали:\n\Имя: $name\n\nEmail: $email\n\nСообщение:\n$message";
+  $mail->Body    = "Обратная связь.\n\n"."Детали:\nИмя: $name\n\nEmail: $email\n\nСообщение:\n$message";
  $mail->send();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
