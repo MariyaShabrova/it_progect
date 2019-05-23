@@ -7,10 +7,18 @@ include "header.php";
     <div class="maycontainer">
     <div class="hero_container">
         <h1 class="hero-title">Sorins Group</h1><br>
+        <?php if($lang == 'RUS'): ?>
         <h2 class="text_container-title">
             современная российская компания
         </h2>
         <h3 class="text_container-title-item">успешно реализующая прoекты на рынке консалтинговых услуг и информационных технологий</h3>
+<?php else: ?>
+<h2 class="text_container-title">
+modern russian company
+        </h2>
+        <h3 class="text_container-title-item">we successfully implement consulting projects</h3>
+<?php endif; ?>
+
             <ul class="hero_list">
                 <li class="hero_list-item">
                     <span class="hero_list-item-img">
