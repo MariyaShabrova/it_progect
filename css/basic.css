@@ -3240,18 +3240,19 @@ button {
 
 .quotes::after {
   content: '';
-  background: #60a9ff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4e4c4c), to(#fefefe));
-  background: linear-gradient(to bottom, #4e4c4c 0%, #fefefe 100%);
+  background: #e5e5e5;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#4e4c4c), to(#fefefe)); */
+  /* background: linear-gradient(to bottom, #4e4c4c 0%, #fefefe 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
-  height: 250px;
+  height: 384px;
   left: 0;
   position: absolute;
-  top: 78px;
+  top: 90px;
   width: 100%;
   z-index: 1;
-  -webkit-clip-path: polygon(0% 55%, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0% 55%, 100% 0, 100% 100%, 0 100%);
+  /* -webkit-clip-path: polygon(0% 55%, 100% 0, 100% 100%, 0 100%); */
+  /* clip-path: polygon(0% 55%, 100% 0, 100% 100%, 0 100%); */
+}
 }
 
 @media screen and (max-width: 480px) {

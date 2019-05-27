@@ -400,3 +400,16 @@ $(document).ready(function(){
 	});
 
 });
+
+//Четвертая секция
+
+$('.text').hide();
+$('.text').first().show();
+$('span').first().addClass('active');
+$('span').click(function(){
+	link = $(this).attr('data');
+	$('#' + link).fadeIn(700);
+	$('#' + link).siblings('div').hide();
+	$(this).addClass('active');
+	$(this).siblings('span').removeClass('active');
+});
