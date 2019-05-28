@@ -405,11 +405,11 @@ $(document).ready(function(){
 
 $('.text').hide();
 $('.text').first().show();
-$('span').first().addClass('active');
-$('span').click(function(){
+$('i').first().addClass('active');
+$('i').click(function(){
 	link = $(this).attr('data');
 	$('#' + link).fadeIn(700);
 	$('#' + link).siblings('div').hide();
 	$(this).addClass('active');
-	$(this).siblings('span').removeClass('active');
+	$(this).siblings('i').removeClass('active');
 });

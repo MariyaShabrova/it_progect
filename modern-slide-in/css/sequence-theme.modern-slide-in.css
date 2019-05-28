@@ -1104,33 +1104,44 @@ text-align: right;
 
 /*Четвертая секция*/
 
-.wrap {
-	font-size: 0;
-	width: 900px;
-	margin: 50px auto 0;
+.category {
+  font-size: 0;
+  width: 1200px;
+  margin: 50px auto 0;
+  background: #f1f1f1;
+  height: 424px;
+  
 }
-span {
-	width: 33.334%;
-	display: inline-block;
-	text-align: center;
-	padding: 25px 0;
-	font-size: 18px;
-	cursor: pointer;
+i {
+  width: 33.334%;
+  display: inline-block;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 3.2px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
 }
-span:hover {
+i:hover {
 	border-bottom: 2px solid rgba(0, 0, 0, .5);
 	color: rgba(0, 0, 0, .5);
 }
-span.active {
+i.active {
 	border-bottom: 2px solid rgba(0, 0, 0, 1);
 	color: rgba(0, 0, 0, 1);
 }
-.wrap-text {
-	width: 100%;
-	padding: 25px 0;
-	font-size: 16px;
-	line-height: 1.5;
-	display: flex;
+.category-text {
+  width: 100%;
+ /*padding: 38px 0;*/
+  font-size: 24px;
+  line-height: 20.5;
+  display: flex;
+  /* background: #ecebeb; */
+  background: #fff9f9 url(../img/fon1.jpg) no-repeat;
 }
 .text {
 	display: flex;
@@ -1140,8 +1151,29 @@ justify-content: space-between;
 	text-align: left;
 	width: 100%;
 	font-size: 16px;
-	margin: 0 0 15px;
+  margin: 0 0 15px;
+  color: black;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 24px;
+  letter-spacing: 1.2px;
 }
 p:last-child {
 	margin-bottom: 0;
+}
+.one1 {
+  padding: 15px 15px 15px 15px;
+}
+.two2 {
+  padding: 15px 15px 15px 15px;
+}
+.three3 {
+  padding: 15px 15px 15px 15px;
+}
+.category-one {
+  background: url(../images/category-fon.png) no-repeat;
 }
