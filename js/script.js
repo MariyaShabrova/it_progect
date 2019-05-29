@@ -413,3 +413,184 @@ $('i').click(function(){
 	$(this).addClass('active');
 	$(this).siblings('i').removeClass('active');
 });
+
+//Пятая секция
+
+
+var controller = new ScrollMagic.Controller();
+var section1 = $('.shapes');
+section1.each(function() {
+	var boxes = $(this).find('.shape--pentagon');
+
+	var tl = new TimelineLite({
+		paused: true
+	});
+	var controller = new ScrollMagic.Controller();
+	tl.staggerFrom(
+		boxes,
+		0.5, {
+			y: '+=50',
+			autoAlpha: 0,
+			ease: Power3.easeOut
+		},
+		0.25
+	);
+	var scene = new ScrollMagic.Scene({
+			triggerElement: this
+		})
+		.on("enter", function(event) {
+			tl.play().timeScale(1);
+		})
+		.on("leave", function(event) {
+			tl.reverse().timeScale(1.5);
+		})
+		.addTo(controller);
+});
+
+
+$(function () {
+
+  var tl1 = new TimelineMax();
+  tl1.to('#arrow', 0.5, {
+    y: '-5%',
+    yoyo: true,
+    repeat: -1
+  });
+
+
+  var tl3 = new TimelineMax();
+
+  tl3.staggerFrom(
+    [
+      '#home03',
+      '#home06',
+      '#home01',
+      '#home02',
+      '#home05',
+      '#home04'
+    ], 1, {
+      opacity: 0,
+      scale: 0.5,
+      transformOrigin: 'center center',
+      ease: Elastic.easeOut.config(1, 0.5)
+    }, 0.15)
+    .staggerFrom(
+      [
+        '#tree03',
+        '#tree01',
+        '#tree02'
+      ], 1, {
+        opacity: 0,
+        scale: 0.5,
+        transformOrigin: 'center center',
+        ease: Elastic.easeOut.config(1, 0.5)
+    }, 0.15, '-=1')
+    .from('#tree04', 0.3, {
+      opacity: 0,
+    },'-=1')
+    .from('#tree05', 0.3, {
+      opacity: 0,
+    },'-=1')
+    .from('#tree06', 0.3, {
+      opacity: 0,
+    },'-=1')
+    .from('#tree07', 0.3, {
+      opacity: 0.5, 
+      x: $(window).width() + 50
+    }, '-=1.5');
+
+  tl3.fromTo('#scene01 #text01', 1, {
+      opacity: 0,
+      transformOrigin: 'center center',
+      scale: 0.5
+    }, {
+      opacity: 1,
+      scale: 1
+    }, '-=2.5')
+    .set('#scene01 #text01', {
+      opacity: 0
+    }, '+=1');
+
+  tl3.fromTo('#scene02 #text02', 1, {
+      opacity: 0,
+      transformOrigin: 'center center',
+      scale: 0.5
+    }, {
+      opacity: 1,
+      scale: 1
+    })
+    .from('#scene02 #woman01', 1, {
+      opacity: 0.5,
+      x: -475
+    })
+    .fromTo('#scene02 #text03', 1, {
+      opacity: 0,
+      transformOrigin: 'center center',
+      scale: 0.5
+    }, {
+      opacity: 1,
+      scale: 1
+    })
+    .from('#scene02 #woman02', 1, {
+      opacity: 0.5,
+      x: $(window).width() + 50
+    }, '-=1')
+    .from('#scene02 #woman03', 1, {
+      opacity: 0.5,
+      x: $(window).width() + 50
+    }, '-=0.8')
+    .from('#scene02 #woman04', 1, {
+      opacity: 0.5,
+      x: $(window).width() + 50
+    }, '-=0.6')
+    .set('#scene02 #text02', {
+      opacity: 0
+    }, '+=1')
+    .set('#scene02 #text03', {
+      opacity: 0
+    })
+    .set('#scene02 #woman01', {
+      opacity: 0
+    })
+    .set('#scene02 #woman02', {
+      opacity: 0
+    })
+    .set('#scene02 #woman03', {
+      opacity: 0
+    })
+    .set('#scene02 #woman04', {
+      opacity: 0
+    });
+
+  tl3.fromTo('#scene03 #text04', 1, {
+      opacity: 0,
+      transformOrigin: 'center center',
+      scale: 0.5
+    }, {
+      opacity: 1,
+      scale: 1
+    })
+    .from('#scene03 #woman06', 1, {
+      opacity: 0.5,
+      x: $(window).width() + 50
+    }, '-=1')
+    .from('#scene03 #woman05', 1, {
+      opacity: 0.5,
+      x: -450
+    }, '+=0')
+
+
+  var ctrl = new ScrollMagic.Controller();
+
+  var scene = new ScrollMagic.Scene({
+      triggerElement: '#scene-01',
+      duration: 5000,
+      triggerHook: 0,
+      reverse: true
+    })
+    .setTween(tl3)
+    .setPin('#scene-01')
+    .addIndicators()
+    .addTo(ctrl);
+
+})
