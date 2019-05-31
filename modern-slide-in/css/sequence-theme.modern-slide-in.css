@@ -1264,7 +1264,7 @@ body {
  
 }
 .shapes-content{
-  height: 860px;
+  height: 960px;
 }
 .shapes{
  
@@ -1382,4 +1382,127 @@ body {
     text-align: center;
     font-style: inherit;
     font-weight: 400;
+}
+
+/*Шестая секция*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.contain {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.freelance {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(#ffffff, #2c2d2f);
+  padding: 3rem;
+  font-family: Varela Round;
+  overflow: hidden;
+}
+
+.freelance header {
+  text-align: center;
+  color: #fff;
+}
+.freelance header i {
+  font-size: 3rem;
+}
+.freelance header .header-title {
+  margin-top: 1.5rem;
+}
+.freelance header .header-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Open Sans;
+  font-weight: 300;
+  margin-top: .75rem;
+  font-size: 1.35rem;
+}
+
+.freelance-grid {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.freelance-grid .grid-item {
+  width: 50%;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .freelance-grid .grid-item {
+    width: 100%;
+    padding: 1.5rem 6rem;
+  }
+}
+@media (max-width: 600px) {
+  .freelance-grid .grid-item {
+    width: 100%;
+    padding: 1.5rem 2rem;
+  }
+}
+.freelance-grid .grid-item i {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+  color: #225782;
+}
+.freelance-grid .grid-item i:nth-child(1) {
+  color: #48a8f5;
+}
+.freelance-grid .grid-item .item-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-family: Open Sans;
+}
+
+.freelance-signup {
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+}
+.freelance-signup h3 {
+  font-family: Varela Round;
+}
+.freelance-signup p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Open Sans;
+  font-weight: 300;
+}
+
+.freelance-btn {
+  position: relative;
+  top: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  color: #0D47A1;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.freelance-btn:hover, .freelance-btn:focus {
+  text-decoration: none;
+  background: white;
+}
+
+.freelance p {
+  font-size: 1.05rem;
 }

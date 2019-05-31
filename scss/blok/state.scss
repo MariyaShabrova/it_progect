@@ -1,0 +1,143 @@
+
+
+  /*Вторая секция*/
+  .circle {
+    border-radius: 50%;
+    background: #0000;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    line-height: 89px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgba(0,123,255,.25);
+  }
+  .how-it-works.row .col-2 {
+    align-self: stretch;
+  }
+  .how-it-works.row .col-2::after {
+    content: "";
+    position: absolute;
+    border-left: 3px solid #afbada;
+    z-index: 1;
+  }
+  .how-it-works.row .col-2.bottom::after {
+    /* had to add 51% to the height to avoid a break 
+       in the segment and avoid a white gap in this
+       first :after rule  
+    */
+    height: 51%;
+    left: 50%;
+    top: 50%;
+  }
+  .how-it-works.row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+  }
+  /* in order to make the left segments with the class
+     of "full" on left cols appear continuous, another    
+     :after instance had to be created as the border of the 
+     segments have a border-left of 3px. This is fine for
+     those that appear on the right cols, but they don't 
+     align on the left without the :after below.
+  */
+  .how-it-works.row .col-2.fullLeft::after {
+    height: 100%;
+    left: calc(50% - 0px);
+  }
+  .how-it-works.row .col-2.top::after {
+    height: 50%;
+    left: 50%;
+    top: 0;
+  }
+  .timeline div {
+    padding: 0;
+    height: 40px;
+  }
+  .timeline hr {
+    border-top: 3px solid #213f99;
+    margin: 0;
+    top: 17px;
+    position: relative;
+  }
+  .timeline .col-2 {
+    display: flex;
+    overflow: hidden;
+  }
+  .timeline .corner {
+    border: 3px solid #213f99;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .timeline .top-right {
+    left: 50%;
+    top: -50%;
+  }
+  .timeline .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+  }
+  .timeline .top-left {
+    left: -50%;
+    top: -50%;
+  }
+  .timeline .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+  }
+  /* type treatments */
+  h5 {
+    font-family:'EB Garamond', serif;
+    font-weight:700;
+    font-size:1.59rem;
+    color:#213f99;
+  }
+  h2 {
+    font-family:'EB Garamond', serif;
+    font-weight:700;
+    color:#c88a12;
+  }
+  p {
+    color:#213f99;
+  }
+  .circle.font-weight-bold {
+    font-family:'EB Garamond', serif;
+  }
+  /* makes caousel captions visible on an array of backgrounds */
+  .carousel-caption p {
+    color:#fff;
+    text-shadow:0 0 10px rgba(0,0,0,1.0), 
+                0 0 20px #000, 
+                0 0 20px #000;
+    font-family:'EB Garamond', serif;
+    background-color:rgba(0,0,0,.64);
+    border-radius:3px;
+    letter-spacing:.13rem;
+    padding:.33rem;
+  }
+  /* /type treatments */
+  /* slight rounds on carousel images */
+  .carousel-inner {
+    border-radius: .33rem;
+  }
+  /* scrollMagic helper classes */
+  .milestone {
+    background-color:#fff;
+    border-radius:7px;
+    opacity:1;
+    transition:1s;
+  }
+  .milestone.fade-in {
+    background-color:rgba(200, 138, 18,.43);
+    opacity:1;
+  }
+  /* /scrollMagic helper classes */
+  
+  
+  
+  
+  
+  
+  
+  
