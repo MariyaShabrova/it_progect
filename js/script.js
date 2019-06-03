@@ -624,3 +624,16 @@ var controller = new ScrollMagic.Controller();
 // FOR LATER: build tween options
 // uses the GSAP greensock animation plugin for tweens
 // along with use of the scrollmagic plugin
+
+
+//section jobs
+
+$(function() {
+	var $list = $('ul li');
+	$list.filter(':first').addClass('animated flipInX');
+	setInterval(function() {
+		if( $list.filter('.flipInX').index() !== $list.length) {
+			$list.filter('.flipInX').removeClass('animated flipInX').next().addClass('animated flipInX');
+		}
+	}, 400);
+});
