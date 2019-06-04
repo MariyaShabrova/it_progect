@@ -425,7 +425,7 @@ section1.each(function() {
 	var tl = new TimelineLite({
 		paused: true
 	});
-	var controller = new ScrollMagic.Controller();
+	
 	tl.staggerFrom(
 		boxes,
 		0.5, {
