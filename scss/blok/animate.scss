@@ -1,0 +1,6 @@
+#animation1 {
+    height: 500px;
+    &.active {
+        background-color: red;
+    }
+}

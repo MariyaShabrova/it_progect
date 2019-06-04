@@ -637,3 +637,12 @@ $(function() {
 		}
 	}, 400);
 });
+
+
+//ScrollMagic
+
+
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#animation1"})
+					.setClassToggle("#animation1", "active") // add class toggle
+					.addTo(controller);
