@@ -29,7 +29,8 @@ const banner = ['/*!\n',
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./"
+      //baseDir: "./"
+      proxy: "localhost:8000"
     },
     port: 3000
   });
