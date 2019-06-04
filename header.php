@@ -138,32 +138,32 @@ include "word.php";
                             <a class="fa-text connection" aria-haspopup="true form" href="#"><?= t('свяжитесь с нами'); ?></a>
                             <div class="grid-container6">
                                 <!--Форма отправки сообщени в шапке сайта-->
-                                <form action="nav_form">
+                                <form action="mail.php" id="contact-form">
                                     <fieldset>
                                         <div class="row">
                                             <section class="col col-6">
                                                 <label class="input">
                                                     <i class="fa fa-append fa-user"></i>
-                                                    <input type="text" placeholder="Имя">
+                                                    <input type="text" placeholder="Имя" name="name">
                                                 </label>
                                             </section>
                                             <section class="col col-6">
                                                 <label class="input">
                                                     <i class="fa fa-append fa-envelope-o"></i>
-                                                    <input type="email" placeholder="Почта">
+                                                    <input type="email" placeholder="Почта" name="email">
                                                 </label>
                                             </section>
                                         </div>
                                         <section>
                                             <label class="input">
                                                 <i class="fa fa-append fa-tag"></i>
-                                                <input type="text" placeholder="Тема">
+                                                <input type="text" placeholder="Тема" name="subject">
                                             </label>
                                         </section>
                                         <section>
                                             <label class="textarea">
                                                 <i class="fa fa-append fa-comment"></i>
-                                                <textarea rows="4" placeholder="Ваше сообщение.."></textarea>
+                                                <textarea rows="4" placeholder="Ваше сообщение.." name="body"></textarea>
                                             </label>
                                         </section>
                                         <button type="submit" class="button">Отправить сообщение</button>
