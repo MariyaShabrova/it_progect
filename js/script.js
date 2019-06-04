@@ -401,6 +401,7 @@ $(document).ready(function(){
 
 });
 
+
 //Четвертая секция
 
 $('.text').hide();
@@ -624,6 +625,7 @@ var controller = new ScrollMagic.Controller();
 // FOR LATER: build tween options
 // uses the GSAP greensock animation plugin for tweens
 // along with use of the scrollmagic plugin
+
 //Отправка формы на почту
 
 $(document).ready(function(e) {
@@ -642,4 +644,7 @@ $(document).ready(function(e) {
 
 			return false;
 	})
+
 });
+
+
