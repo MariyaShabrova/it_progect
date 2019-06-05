@@ -621,6 +621,7 @@ html,
 .wrap-block {
   position: absolute;
   left: 13%;
+  max-width: 967px;
 }
 .hero_list {
   display: flex;
@@ -1437,13 +1438,12 @@ html, body {
 .freelance-grid {
   display: flex;
   align-items: center;
-  margin-top: 1.5rem;
   flex-wrap: wrap;
 }
 .freelance-grid .grid-item {
   width: 50%;
   color: #fff;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
 }
 @media (max-width: 900px) {
@@ -1461,8 +1461,8 @@ html, body {
 .freelance-grid .grid-item i {
   width: 100%;
   font-size: 1.5rem;
-  margin-bottom: .75rem;
-  color: #225782;
+  margin-bottom: .55rem;
+  color: #48a8f5;
 }
 .freelance-grid .grid-item i:nth-child(1) {
   color: #48a8f5;

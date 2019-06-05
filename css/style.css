@@ -5714,3 +5714,27 @@ p {
 #animation1.active {
   background-color: red;
 }
+
+.form-contact {
+  background: #f2f2f2;
+  min-height: 450px;
+}
+
+.form-contact_module {
+  font-size: 1.285em;
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-form_title {
+  margin: 0 0 30px;
+  font-size: 3rem;
+  line-height: 36px;
+}
