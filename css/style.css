@@ -4711,6 +4711,10 @@ h3 {
   }
 }
 
+.benefits__element::before {
+  content: "\e60c";
+}
+
 .benefits__icon {
   display: block;
   width: 60px;

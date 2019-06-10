@@ -4628,7 +4628,7 @@ h3 {
 .benefits {
   width: 100%;
   background: #0000;
-  height: 610px;
+  height: 375px;
 }
 
 @media screen and (max-width: 480px) {
@@ -4710,6 +4710,7 @@ h3 {
     font-size: 5px;
   }
 }
+
 
 .benefits__icon {
   display: block;
